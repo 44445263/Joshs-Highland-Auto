@@ -49,15 +49,17 @@
   }
 
   .hero {
-    background: url('images/logo.png') no-repeat left;
-    background-size: contain;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    color: green;
-    font-size: 1em;
-    text-shadow: 2px 2px 5px #000;
+    background: 
+    url('images/logo.png') no-repeat left center,   /* First image (left) */
+    url('images/1001.png') no-repeat right center; /* Second image (right) */
+  background-size: contain, contain; /* one size for each image */
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: green;
+  font-size: 1em;
+  text-shadow: 2px 2px 5px #000;
   }
 
   .content {
