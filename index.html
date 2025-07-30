@@ -1,191 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Josh's Highland Auto Repair</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    position: relative;
+    overflow-x: hidden;
+    .background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url('images/1002.jpg') no-repeat center center;
+  background-size: contain;
+  transform: scaleX(.9); /* Adjust this to make it wider */
+  transform-origin: center;
+  opacity: 0.4;
+  z-index: -1;
+  pointer-events: none;
+}
+  }
+
+
+  header {
+  background-color: rgba(46, 59, 85, 0.7); /* semi-transparent dark blue */
+  color: white;
+  padding: 1em;
+  text-align: center;
+  }
+
+  nav {
+    background: #1c2535;
+    padding: 0.5em;
+    text-align: center;
+  }
+
+  nav a {
+    color: white;
+    margin: 0 1em;
+    text-decoration: none;
+  }
+
+  .hero {
+    background: 
+    url('images/logo.png') no-repeat left center,   /* First image (left) */
+    url('images/1001.png') no-repeat right center; /* Second image (right) */
+  background-size: contain, contain; /* one size for each image */
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: green;
+  font-size: 1em;
+  text-shadow: 2px 2px 5px #000;
+  }
+
+  .content {
+    padding: 2em;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 10px;
+  }
+
+  .section {
+    margin-bottom: 2em;
+    padding: 1em;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  footer {
+    background: #2e3b55;
+    color: green;
+    text-align: center;
+    padding: 1em;
+  }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .gallery img {
+    max-width: 250px;
+    max-height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+</style>
 </head>
 <body>
-  <!-- Header -->
-  <header class="header">
-    <div class="logo">Josh's Highland Auto Repair</div>
-    <a class="call-btn" href="tel:6164301287">Call Now: (616) 430-1287</a>
-  </header>
+  <div class="background-image"></div>
+  
+<header>
+  <h1>Josh's Highland Auto Repair</h1>
+  <p>Faith-Based, Farm-Raised, Patriot Proud, Family Oriented | Pierson, Michigan</p>
+</header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <h1>Trusted Auto Repair on the Farm</h1>
-    <p>Honest, reliable service – right in Pierson, Michigan.</p>
-  </section>
+<nav>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-  <!-- Services -->
-  <section class="services">
-    <h2>Our Services</h2>
-    <div class="service-grid">
-      <div class="service-card">Brake Service</div>
-      <div class="service-card">Engine Service</div>
-      <div class="service-card">Oil Change</div>
-      <div class="service-card">Suspension</div>
-      <div class="service-card">Driveline</div>
-    </div>
-  </section>
+<div class="hero">
+  
+</div>
 
-  <!-- About -->
-  <section class="about">
+<div class="content">
+  <div id="about" class="section">
     <h2>About Us</h2>
-    <p>At Josh's Highland Auto Repair, we provide honest, dependable automotive services in a family-friendly environment. Located on a beautiful farm with Scottish Highland cows, we combine quality workmanship with small-town values.</p>
-  </section>
+    <p>"At Josh’s Highland Auto Repair, we are dedicated to offering top-quality auto repair services that are affordable, accurate, and timely. Founded by a passionate car enthusiast, my goal is to ensure your vehicle runs smoothly without breaking the bank. Whether you need general maintenance, diagnostics, or major repairs, I am here to help. Currently operating as a part-time business, I aim to transition into full-time service in the future. You can trust Josh’s Highland Auto Repair for transparent communication, competitive pricing, and repairs done right the first time. Visit Josh’s Highland Auto Repair and experience reliable service you can count on!" We proudly stand on our faith, our flag, and our commitment to quality auto care.</p>
+  </div>
 
-  <!-- Gallery -->
-  <section class="gallery">
-    <h2>Gallery</h2>
-    <div class="gallery-grid">
-      <img src="images/shop1.jpg" alt="Shop" />
-      <img src="images/shop2.jpg" alt="Shop" />
-      <img src="images/shop3.jpg" alt="Shop" />
-      <img src="images/cows1.jpg" alt="Highland Cow" />
-      <img src="images/cows2.jpg" alt="Highland Cow" />
-    </div>
-  </section>
+  <div id="services" class="section">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Brake Repair & Replacement</li>
+      <li>Oil Changes & Routine Maintenance</li>
+      <li>Diagnostics & Check Engine Lights</li>
+      <li>Suspension, Steering & Alignment</li>
+      <li>Battery & Electrical Services</li>
+      <li>Custom Scheduling & Emergency Repairs</li>
+      <li>Drivetrain Services</li>
+    </ul>
+  </div>
 
-  <!-- Contact -->
-  <section class="contact">
-    <h2>Contact</h2>
-    <p><strong>Phone:</strong> <a href="tel:6164301287">(616) 430-1287</a></p>
-    <p><strong>Location:</strong> Pierson, Michigan</p>
-  </section>
+<div id="gallery" class="section">
+  <h2>Shop & Farm Gallery</h2>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <p>&copy; 2025 Josh's Highland Auto Repair</p>
-  </footer>
+  <div id="gallery" class="section">
+  <h2>Gallery</h2>
+        
+  <h3>The Shop</h3>
+  <div class="gallery">
+    <img src="images/shop2.jpg" alt="Shop">
+      </div>
+</div>
+ 
+  <h3>Projects</h3>
+  <div class="gallery">
+    <img src="images/project10.jpg" alt="Repair Project">
+    <img src="images/project11.jpg" alt="Repair Project">
+    <img src="images/project12.jpg" alt="Repair Project">
+    <img src="images/project13.jpg" alt="Repair Project">
+    <img src="images/project14.jpg" alt="Repair Project">
+    <img src="images/project15.jpg" alt="Repair Project">
+    <img src="images/project16.jpg" alt="Repair Project">
+    <img src="images/project17.jpg" alt="Repair Project">
+    <img src="images/project18.jpg" alt="Repair Project">
+    <img src="images/project19.jpg" alt="Repair Project">
+    <img src="images/project20.jpg" alt="Repair Project">
+    <img src="images/project21.jpg" alt="Repair Project">
+    <img src="images/project22.jpg" alt="Repair Project">    
+    <img src="images/project23.jpg" alt="Repair Project">
+    <img src="images/project24.jpg" alt="Repair Project">
+    <img src="images/project25.jpg" alt="Repair Project">
+    <img src="images/project26.jpg" alt="Repair Project">
+    <img src="images/project27.jpg" alt="Repair Project">
+    <img src="images/project28.jpg" alt="Repair Project">
+    <img src="images/project29.jpg" alt="Repair Project">
+    <img src="images/project30.jpg" alt="Repair Project">
+    <img src="images/project31.jpg" alt="Repair Project">
+    <img src="images/project32.jpg" alt="Repair Project">
+    <img src="images/project33.jpg" alt="Repair Project">
+  </div>
+</div>
+  
+   <h3>The Farm</h3>
+  <div class="gallery">
+    <img src="images/cow1.jpg" alt="Highland Cow">
+    <img src="images/cow15.jpg" alt="Highland Cow">
+    <img src="images/cow16.jpg" alt="Highland Cow">
+    <img src="images/cow17.jpg" alt="Highland Cow">
+    <img src="images/cow18.jpg" alt="Highland Cow">
+    <img src="images/cow19.jpg" alt="Highland Cow"
+  </div>
+</div>
+  
+    <h3>Misc.</h3>
+  <div class="gallery">
+    <img src="images/misc19.jpg" alt="Misc.">
+    <img src="images/misc20.jpg" alt="Misc.">
+        </div>  
+</div>
+
+  <div id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p><strong>Address:</strong> 18460 Kimball rd. Pierson, MI 49339</p>
+    <p><strong>Phone:</strong> (616) 430-1287</p>
+    <p><strong>Email:</strong> barnum21.jb@gmail.com</p>
+    <p><strong>Hours:</strong> Mon–Fri 5pm–8:30pm, Sat by appointment</p>
+   
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2025 Josh's Highland Auto Repair | Built with pride in the USA</p>
+</footer>
+
 </body>
 </html>
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #fff;
-  color: #333;
-  line-height: 1.6;
-}
-
-/* Header */
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background: #333 url('images/logo.png') no-repeat left center;
-  background-size: contain;
-  color: #fff;
-}
-
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.call-btn {
-  background: #f4f4f4;
-  color: #333;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.call-btn:hover {
-  background: #ddd;
-}
-
-/* Hero Section */
-.hero {
-  text-align: center;
-  padding: 4rem 1rem;
-  background: url('images/flag-cow-bg.jpg') no-repeat center/cover;
-  color: #fff;
-  text-shadow: 1px 1px 5px #000;
-}
-
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.hero p {
-  font-size: 1.3rem;
-}
-
-/* Services */
-.services {
-  padding: 2rem 1rem;
-  max-width: 1000px;
-  margin: auto;
-}
-
-.services h2 {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.service-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 1rem;
-}
-
-.service-card {
-  background: #333;
-  color: #fff;
-  padding: 1.5rem;
-  text-align: center;
-  border-radius: 6px;
-  font-weight: bold;
-}
-
-/* About */
-.about {
-  padding: 2rem 1rem;
-  max-width: 800px;
-  margin: auto;
-  text-align: center;
-}
-
-/* Gallery */
-.gallery {
-  padding: 2rem 1rem;
-  max-width: 1000px;
-  margin: auto;
-}
-
-.gallery h2 {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 1rem;
-}
-
-.gallery-grid img {
-  width: 100%;
-  border-radius: 6px;
-}
-
-/* Contact */
-.contact {
-  padding: 2rem 1rem;
-  text-align: center;
-}
-
-/* Footer */
-.footer {
-  text-align: center;
-  padding: 1rem;
-  background: #333;
-  color: #fff;
-}
