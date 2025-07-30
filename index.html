@@ -17,7 +17,6 @@
   <section class="hero">
     <h1>Trusted Auto Repair on the Farm</h1>
     <p>Honest, reliable service – right in Pierson, Michigan.</p>
-    <a href="tel:6164301287" class="hero-call-btn">Call Now</a>
   </section>
 
   <!-- Services -->
@@ -64,19 +63,22 @@
 </body>
 </html>
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  background: #ffffff;
+  background: #fff;
   color: #333;
+  line-height: 1.6;
 }
 
+/* Header */
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background: #004aad;
+  background: #333 url('images/logo.png') no-repeat left center;
+  background-size: contain;
   color: #fff;
 }
 
@@ -86,8 +88,8 @@ body {
 }
 
 .call-btn {
-  background: #fff;
-  color: #004aad;
+  background: #f4f4f4;
+  color: #333;
   padding: 0.5rem 1rem;
   border-radius: 4px;
   font-weight: bold;
@@ -95,47 +97,37 @@ body {
 }
 
 .call-btn:hover {
-  background: #e6e6e6;
+  background: #ddd;
 }
 
+/* Hero Section */
 .hero {
   text-align: center;
-  padding: 3rem 1rem;
-  background: #f4f4f4;
+  padding: 4rem 1rem;
+  background: url('images/flag-cow-bg.jpg') no-repeat center/cover;
+  color: #fff;
+  text-shadow: 1px 1px 5px #000;
 }
 
 .hero h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 0.5rem;
 }
 
 .hero p {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
+  font-size: 1.3rem;
 }
 
-.hero-call-btn {
-  background: #004aad;
-  color: #fff;
-  padding: 0.75rem 1.5rem;
-  border-radius: 4px;
-  text-decoration: none;
-  font-size: 1rem;
-}
-
-.hero-call-btn:hover {
-  background: #003080;
-}
-
-.services, .about, .gallery, .contact {
+/* Services */
+.services {
   padding: 2rem 1rem;
   max-width: 1000px;
   margin: auto;
 }
 
-.services h2, .about h2, .gallery h2, .contact h2 {
+.services h2 {
   text-align: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .service-grid {
@@ -145,12 +137,32 @@ body {
 }
 
 .service-card {
-  background: #004aad;
+  background: #333;
   color: #fff;
   padding: 1.5rem;
   text-align: center;
   border-radius: 6px;
   font-weight: bold;
+}
+
+/* About */
+.about {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+/* Gallery */
+.gallery {
+  padding: 2rem 1rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.gallery h2 {
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .gallery-grid {
@@ -164,9 +176,16 @@ body {
   border-radius: 6px;
 }
 
+/* Contact */
+.contact {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+/* Footer */
 .footer {
   text-align: center;
   padding: 1rem;
-  background: #004aad;
+  background: #333;
   color: #fff;
 }
